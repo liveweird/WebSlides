@@ -116,6 +116,7 @@
           </div>
           <!-- .end .wrap -->
         </section>
+
         <section>
           <h1 class="wrap aligncenter">Setting things up</h1>
           <hr/>
@@ -161,15 +162,44 @@ git config --global -l --show-origin</pre>
         </section>
 
         <section>
+          <h1 class="wrap aligncenter">Getting a sample project</h1>
+          <hr/>
           <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
+          <div class="size-80 aligncenter">
             <div class="grid vertical-align">
-              <div class="column">
-                <p>Get a sample project.</p>
+              <div class="column" style="text-align: left">
+                <p><strong>1.</strong> Clone the repository</p>
               </div>
               <!-- .end .column -->
               <div class="column">
-                <pre></pre>
+                <pre>git clone https://github.com/liveweird/WebSlides.git</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> Learn about the remote</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git remote
+git remote get-url origin</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>3.</strong> Learn about the branch(es)</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git branch
+git branch -r
+git branch snafu
+git checkout snafu
+git branch -d snafu</pre>
               </div>
               <!-- .end .column -->
             </div>
