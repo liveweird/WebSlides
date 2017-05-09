@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>Git Essentials</title>
+    <meta name="description" content="Practicalities, beyond the syntax">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/base.css">
+
+    <!-- CSS Colors -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/colors.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://no-kill-switch.ghost.io"> <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Git Essentials" />
+    <meta property="og:description" content="Practicalities, beyond the syntax"> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-05-09T09:23:00"> <!-- EDIT -->
+    <meta property="og:image" content="https://webslides.tv/static/images/share-karma.jpg" > <!-- EDIT -->
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="429">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@liveweird"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@liveweird"> <!-- EDIT -->
+    <meta name="twitter:title" content="Git Essentials"> <!-- EDIT -->
+    <meta name="twitter:description" content="Practicalities, beyond the syntax"> <!-- EDIT -->
+    <meta name="twitter:image" content="https://webslides.tv/static/images/share-karma.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="https://no-kill-switch.ghost.io" title="No Kill Switch">No Kill Switch</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/liveweird/webslides" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>WebSlides (fork)</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/liveweird" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@liveweird</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="webslides" class="vertical">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1 class="text-landing">Git Essentials</h1>
+            <p class="text-intro">
+              Practicalities, beyond syntax.
+            </p>
+            <nav>
+               <ul>
+                 <li><a href="https://github.com/liveweird/webslides">Github</a></li>
+               </ul>
+             </nav>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <h1 class="wrap aligncenter">Setting things up</h1>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="size-80 aligncenter">
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>1.</strong> Check whether Git is present ...</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git version</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> Set up your local Git installation.</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git config --global -l --show-origin</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>3.</strong> List the contents (for kicks &nbsp; giggles).</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>cat C:/Users/johndoe/.gitconfig</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p>Get a sample project.</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre></pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="../static/js/webslides.js"></script>
+    
+    <!-- Autoslide 5 seconds. If you don't want autoslide, remove: {autoslide: 5000} -->
+    <script>
+      window.ws = new WebSlides(/* { autoslide: 5000 } */);
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../static/js/svg-icons.js"></script>
+
+  </body>
+</html>
