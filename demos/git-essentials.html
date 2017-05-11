@@ -180,6 +180,37 @@ git config --global mergetool.bc.path ".../BComp.exe"</pre>
               <!-- .end .column -->
             </div>
             <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> Set up an editor for Git's use</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git config --global core.editor code</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <h1 class="wrap aligncenter">In case of emergency ...</h1>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="size-80 aligncenter">
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>1.</strong> Get help on the command you're interested in</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git help &lt;command&gt;</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
           </div>
           <!-- .end .wrap -->
         </section>
@@ -218,11 +249,100 @@ git remote get-url origin</pre>
               </div>
               <!-- .end .column -->
               <div class="column">
-                <pre>git branch
-git branch -r
+                <pre>git branch -r
 git branch snafu
 git checkout snafu
 git branch -d snafu</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <h1 class="wrap aligncenter">Working with files [1/2]</h1>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="size-80 aligncenter">
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>1.</strong> Add files (to commit)</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git add/rm/mv &lt;file&gt;
+git rm --cached &lt;file&gt; 
+git reset HEAD &lt;file&gt;
+git checkout -- &lt;file&gt;</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> Find out the local file status</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git status
+git status -s</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>3.</strong> Check which files are being ignored</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>cat .gitignore</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <h1 class="wrap aligncenter">Working with files [2/2]</h1>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="size-80 aligncenter">
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>1.</strong> Check the differences (before the commit)</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git diff
+git diff --staged</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> </p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git status
+git status -s</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>3.</strong> </p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>cat .gitignore</pre>
               </div>
               <!-- .end .column -->
             </div>
