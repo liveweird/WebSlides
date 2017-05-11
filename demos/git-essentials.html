@@ -186,7 +186,19 @@ git config --global mergetool.bc.path ".../BComp.exe"</pre>
               </div>
               <!-- .end .column -->
               <div class="column">
-                <pre>git config --global core.editor code</pre>
+                <pre>git config --global core.editor "code --wait"
+git config --global -e</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>3.</strong> Create handy aliases</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>TBD</pre>
               </div>
               <!-- .end .column -->
             </div>
@@ -292,9 +304,30 @@ git status -s</pre>
               <!-- .end .column -->
             </div>
             <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <h1 class="wrap aligncenter">Working with files [2/2]</h1>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="size-80 aligncenter">
             <div class="grid vertical-align">
               <div class="column" style="text-align: left">
-                <p><strong>3.</strong> Check which files are being ignored</p>
+                <p><strong>3.</strong> Check the differences (before the commit)</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git diff
+git diff --staged</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>4.</strong> Check which files are being ignored</p>
               </div>
               <!-- .end .column -->
               <div class="column">
@@ -308,41 +341,59 @@ git status -s</pre>
         </section>
 
         <section>
-          <h1 class="wrap aligncenter">Working with files [2/2]</h1>
+          <h1 class="wrap aligncenter">Commits, finally! [1/2]</h1>
           <hr/>
           <!--.wrap = container (width: 90%) -->
           <div class="size-80 aligncenter">
             <div class="grid vertical-align">
               <div class="column" style="text-align: left">
-                <p><strong>1.</strong> Check the differences (before the commit)</p>
+                <p><strong>1.</strong> Making an actual commit</p>
               </div>
               <!-- .end .column -->
               <div class="column">
-                <pre>git diff
-git diff --staged</pre>
+                <pre>git commit
+git commit -m &lt;message&gt;</pre>
               </div>
               <!-- .end .column -->
             </div>
             <!-- .end .grid -->
             <div class="grid vertical-align">
               <div class="column" style="text-align: left">
-                <p><strong>2.</strong> </p>
+                <p><strong>2.</strong> Browsing the history (output)</p>
               </div>
               <!-- .end .column -->
               <div class="column">
-                <pre>git status
-git status -s</pre>
+                <pre>git log
+git log --grep
+git log --pretty=oneline|short
+git log --decorate
+git log --graph
+git log -p -n 3
+git log --stat</pre>
               </div>
               <!-- .end .column -->
             </div>
             <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <h1 class="wrap aligncenter">Commits, finally! [2/2]</h1>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="size-80 aligncenter">
             <div class="grid vertical-align">
               <div class="column" style="text-align: left">
-                <p><strong>3.</strong> </p>
+                <p><strong>3.</strong> Browsing the history (filtering)</p>
               </div>
               <!-- .end .column -->
               <div class="column">
-                <pre>cat .gitignore</pre>
+                <pre>git log --since=2.weeks
+git log --since="2017-05-01" --until="2017-05-10"
+git log -S snafu
+git log --grep Personalization
+git log --author="Sebastian"</pre>
               </div>
               <!-- .end .column -->
             </div>
