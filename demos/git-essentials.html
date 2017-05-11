@@ -250,21 +250,9 @@ git config --global -e</pre>
               <!-- .end .column -->
               <div class="column">
                 <pre>git remote
-git remote get-url origin</pre>
-              </div>
-              <!-- .end .column -->
-            </div>
-            <!-- .end .grid -->
-            <div class="grid vertical-align">
-              <div class="column" style="text-align: left">
-                <p><strong>3.</strong> Learn about the branch(es)</p>
-              </div>
-              <!-- .end .column -->
-              <div class="column">
-                <pre>git branch -r
-git branch snafu
-git checkout snafu
-git branch -d snafu</pre>
+git remote -v
+git remote get-url origin
+git remote show origin</pre>
               </div>
               <!-- .end .column -->
             </div>
@@ -285,8 +273,15 @@ git branch -d snafu</pre>
               <!-- .end .column -->
               <div class="column">
                 <pre>git add/rm/mv &lt;file&gt;
+git add -p
+git add -i
 git rm --cached &lt;file&gt; 
 git reset HEAD &lt;file&gt;
+git reset HEAD^ &lt;file&gt;
+git reset HEAD^^ &lt;file&gt;
+git reset HEAD &lt;file&gt; --hard
+git reset HEAD~ &lt;file&gt; --hard
+git reset HEAD~~ &lt;file&gt; --hard
 git checkout -- &lt;file&gt;</pre>
               </div>
               <!-- .end .column -->
@@ -352,7 +347,9 @@ git diff --staged</pre>
               <!-- .end .column -->
               <div class="column">
                 <pre>git commit
-git commit -m &lt;message&gt;</pre>
+git commit -m &lt;message&gt;
+git commit -a -m &lt;message&gt;
+git show &lt;sha-1&gt;</pre>
               </div>
               <!-- .end .column -->
             </div>
@@ -393,7 +390,56 @@ git log --stat</pre>
 git log --since="2017-05-01" --until="2017-05-10"
 git log -S snafu
 git log --grep Personalization
-git log --author="Sebastian"</pre>
+git log --author="Sebastian"
+git log -u index.html
+git log &lt;branch&gt;..HEAD
+git log ^&lt;branch1&gt;..&lt;branch2&gt;
+git log &lt;branch1&gt;...&lt;branch2&gt;</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>4.</strong> Fixing last commit</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git commit -m "Feature X"
+&lt;do something&gt;
+git commit --amend</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->            
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <h1 class="wrap aligncenter">Working with remotes</h1>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="size-80 aligncenter">
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>1.</strong> Pulling VS Fetching</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git fetch
+git pull</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> Pushing</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git push &lt;remote&gt; &lt;branch&gt;</pre>
               </div>
               <!-- .end .column -->
             </div>
@@ -401,6 +447,76 @@ git log --author="Sebastian"</pre>
           </div>
           <!-- .end .wrap -->
         </section>
+
+        <section>
+          <h1 class="wrap aligncenter">Merging changes</h1>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="size-80 aligncenter">
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>1.</strong> Learn about the branch(es)</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git branch -r
+git branch snafu
+git checkout snafu
+git checkout --track origin/snafu
+git branch -u origin/snafu
+git branch -d snafu
+git branch -vv</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> Merging 101</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git merge fugazi
+git mergetool
+git rebase fugazi
+git branch --merged
+git branch --no-merged
+</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <h1 class="wrap aligncenter">Wait, there's more!</h1>
+            <ul class="flexblock border blink">
+              <li>
+                <a href="">
+                  <h3>Tagging</h3>
+                  Marking specific points in history
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h3>Aliases</h3>
+                  Simplifying the calls of more sophisticated commands
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h3>Reflog</h3>
+                  History of HEAD/branches traversals
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
 
       </article>
     </main>
