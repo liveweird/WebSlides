@@ -141,6 +141,7 @@
               <div class="column">
                 <pre>git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
+git config --global color.ui auto
 git config --global -l --show-origin</pre>
               </div>
               <!-- .end .column -->
@@ -649,6 +650,31 @@ git revert -m &lt;sha_a&gt;..&lt;sha_b&gt;</pre>
               <!-- .end .column -->
             </div>
             <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>3.</strong> Find who made the last change for each line</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git blame &lt;file&gt;</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>4.</strong> Binary search across history</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git bisect start
+git bisect bad
+git bisect good
+git bisect reset</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
           </div>
           <!-- .end .wrap -->
         </section>
@@ -666,6 +692,17 @@ git revert -m &lt;sha_a&gt;..&lt;sha_b&gt;</pre>
               <div class="column">
                 <pre>git reset --soft HEAD~n
 git commit</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> "Screw you guys, I'm going home!" (LITE)</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git checkout -- .</pre>
               </div>
               <!-- .end .column -->
             </div>
