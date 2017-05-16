@@ -262,26 +262,67 @@ git remote show origin</pre>
         </section>
 
         <section>
-          <h1 class="wrap aligncenter">Working with files [1/2]</h1>
+          <h1 class="wrap aligncenter">Working with files [1/3]</h1>
           <hr/>
           <!--.wrap = container (width: 90%) -->
           <div class="size-80 aligncenter">
             <div class="grid vertical-align">
               <div class="column" style="text-align: left">
-                <p><strong>1.</strong> Add files (to commit)</p>
+                <p><strong>1.</strong> <strong>HEAD</strong> vs <strong>Index</strong> vs <strong>Working Directory</strong></p>
+              </div>
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> <strong>checkout</strong> = moving HEAD</p>
+              </div>
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> <strong>reset --soft</strong> = moving branch HEAD refers to (w/o changing Index or WD)</p>
+              </div>
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>3.</strong> <strong>reset --mixed</strong> = likes soft + resets Index</p>
+              </div>
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>4.</strong> <strong>reset --hard</strong> = likes mixed + resets WD</p>
+              </div>
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <h1 class="wrap aligncenter">Working with files [2/3]</h1>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="size-80 aligncenter">
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>1.</strong> Relative revisions: <strong>^</strong> (parent of parent) vs <strong>~</strong> (nth parent)</p>
+              </div>
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> Add files (to commit)</p>
               </div>
               <!-- .end .column -->
               <div class="column">
                 <pre>git add/rm/mv &lt;file&gt;
 git add -p
 git add -i
-git rm --cached &lt;file&gt; 
-git reset HEAD &lt;file&gt;
-git reset HEAD^ &lt;file&gt;
+git rm --cached &lt;file&gt;
 git reset HEAD^^ &lt;file&gt;
-git reset HEAD &lt;file&gt; --hard
-git reset HEAD~ &lt;file&gt; --hard
-git reset HEAD~~ &lt;file&gt; --hard
+git reset HEAD~~ &lt;file&gt;
 git checkout -- &lt;file&gt;</pre>
               </div>
               <!-- .end .column -->
@@ -289,7 +330,7 @@ git checkout -- &lt;file&gt;</pre>
             <!-- .end .grid -->
             <div class="grid vertical-align">
               <div class="column" style="text-align: left">
-                <p><strong>2.</strong> Find out the local file status</p>
+                <p><strong>3.</strong> Find out the local file status</p>
               </div>
               <!-- .end .column -->
               <div class="column">
@@ -304,13 +345,13 @@ git status -s</pre>
         </section>
 
         <section>
-          <h1 class="wrap aligncenter">Working with files [2/2]</h1>
+          <h1 class="wrap aligncenter">Working with files [3/3]</h1>
           <hr/>
           <!--.wrap = container (width: 90%) -->
           <div class="size-80 aligncenter">
             <div class="grid vertical-align">
               <div class="column" style="text-align: left">
-                <p><strong>3.</strong> Check the differences (before the commit)</p>
+                <p><strong>4.</strong> Check the differences (before the commit)</p>
               </div>
               <!-- .end .column -->
               <div class="column">
@@ -322,7 +363,7 @@ git diff --staged</pre>
             <!-- .end .grid -->
             <div class="grid vertical-align">
               <div class="column" style="text-align: left">
-                <p><strong>4.</strong> Check which files are being ignored</p>
+                <p><strong>5.</strong> Check which files are being ignored</p>
               </div>
               <!-- .end .column -->
               <div class="column">
@@ -401,17 +442,15 @@ git log &lt;branch1&gt;...&lt;branch2&gt;</pre>
             <!-- .end .grid -->
             <div class="grid vertical-align">
               <div class="column" style="text-align: left">
-                <p><strong>4.</strong> Fixing last commit</p>
+                <p><strong>4.</strong> ???</p>
               </div>
               <!-- .end .column -->
               <div class="column">
-                <pre>git commit -m "Feature X"
-&lt;do something&gt;
-git commit --amend</pre>
+                <pre>???</pre>
               </div>
               <!-- .end .column -->
             </div>
-            <!-- .end .grid -->            
+            <!-- .end .grid -->
           </div>
           <!-- .end .wrap -->
         </section>
@@ -478,10 +517,166 @@ git branch -vv</pre>
               <div class="column">
                 <pre>git merge fugazi
 git mergetool
+git merge --abort
 git rebase fugazi
 git branch --merged
-git branch --no-merged
-</pre>
+git branch --no-merged</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <h1 class="wrap aligncenter">Stashing</h1>
+          <h4 class="aligncenter">btw. you shouldn't need stashing ...</h4>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="size-80 aligncenter">
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>1.</strong> Branch-agnostic, multi-spot "pocket"</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git stash save &lt;name&gt;
+git stash --patch
+git stash list
+git stash apply
+git stash apply &lt;name&gt;
+git stash drop &lt;name&gt;</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> Stash - the way out</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git stash branch fugazi</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <h1 class="wrap aligncenter">When things go <strong>*boom*</strong></h1>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="size-80 aligncenter">
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>1.</strong> Fixing last commit</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git commit --amend</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> Interactive rebase</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git rebase -i HEAD~n
+git rebase --continue</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>3.</strong> Reverting commits</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git revert &lt;sha&gt;
+git revert -m &lt;sha_a&gt;..&lt;sha_b&gt;</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>4.</strong> "Screw you guys, I'm going home!"</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git reset --hard HEAD</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <h1 class="wrap aligncenter">Git "gems"</h1>
+          <h4 class="aligncenter">Rarely used commands that can save you some time</h4>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="size-80 aligncenter">
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>1.</strong> Commit history for particular file</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git whatchanged &lt;file&gt;</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> Merge a single commit, wherever it belongs</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git cherry-pick &lt;sha&gt;</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <h1 class="wrap aligncenter">Git Patterns</h1>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="size-80 aligncenter">
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>1.</strong> Squashing commits</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git reset --soft HEAD~n
+git commit</pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+            <div class="grid vertical-align">
+              <div class="column" style="text-align: left">
+                <p><strong>2.</strong> "Screw you guys, I'm going home!"</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>git reset --hard HEAD</pre>
               </div>
               <!-- .end .column -->
             </div>
@@ -512,6 +707,36 @@ git branch --no-merged
                   History of HEAD/branches traversals
                 </a>
               </li>
+              <li>
+                <a href="">
+                  <h3>Submodules</h3>
+                  Way to embed subrepos within repos
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h3>Hooks</h3>
+                  Integrating Git seemlessly into your delivery pipeline
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h3>Interfering with history</h3>
+                  Filtering, replacing & other paths straight to doom
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h3>Signing commits</h3>
+                  With GPG
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h3>Rerere</h3>
+                  Automating conflict resolution (no shit!)
+                </a>
+              </li>
             </ul>
           </div>
           <!-- .end .wrap -->
@@ -524,7 +749,7 @@ git branch --no-merged
 
     <!-- Required -->
     <script src="../static/js/webslides.js"></script>
-    
+
     <!-- Autoslide 5 seconds. If you don't want autoslide, remove: {autoslide: 5000} -->
     <script>
       window.ws = new WebSlides(/* { autoslide: 5000 } */);
