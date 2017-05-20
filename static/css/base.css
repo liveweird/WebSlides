@@ -1386,6 +1386,17 @@ header[role=banner]:hover {
   /*padding-left: 6rem;*/
 }
 
+.nkslogo a {
+  background: url(../images/logos/nks_black.png) no-repeat 0 0;
+  background-size: auto 4.8rem;
+  width: 20rem;
+  height: 4.8rem;
+  vertical-align: middle;
+  float: left;
+  text-indent: -4000px;
+  /*If you remove text-indent */
+  /*padding-left: 6rem;*/
+}
 
 /*@media (max-width: 600px){
 .logo a {text-indent: -4000px;

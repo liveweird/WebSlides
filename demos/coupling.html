@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+      
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+      
+      Thanks!
+    -->
+      
+    <!-- SEO -->
+    <title>Coupling</title>
+    <meta name="description" content="By far not everything you'd like to know about coupling">
+    
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    
+    <!-- CSS Base -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/base.css">
+    
+    <!-- CSS Colors -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/colors.css">
+    
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+    
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+    
+    <!-- FACEBOOK -->
+    <!-- EDIT -->
+    <meta property="og:url" content="https://no-kill-switch.ghost.io/">
+    
+    <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WebSlides: Coupling" />
+    <meta property="og:description" content="By far not everything you'd like to know about coupling">
+    
+    <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-05-20T16:24:56">
+    <!-- EDIT -->
+    <meta property="og:image" content="../static/images/share-webslides.jpg" >
+    <!-- EDIT -->
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="429">
+    
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides">
+    
+    <!-- EDIT -->
+    <meta name="twitter:creator" content="@liveweird">
+    <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides: Coupling">
+    <!-- EDIT -->
+    <meta name="twitter:description" content="By far not everything you'd like to know about coupling">
+    <!-- EDIT -->
+    <meta name="twitter:image" content="../static/images/share-webslides.jpg">
+    
+    <!-- EDIT -->
+    
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+    
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="nkslogo"><a href="https://no-kill-switch.ghost.io" title="No Kill Switch">No Kill Switch</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/liveweird/webslides" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>liveweird</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/liveweird" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@liveweird</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+    
+    <main role="main">
+      <article id="webslides">
+      
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+          
+        <section class="bg-red">
+          <span class="background dark" style="background-image:url('https://source.unsplash.com/HrUg-9bpc9E/1600x800')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1>
+              By far not everything you'd like to know about <strong>coupling</strong>
+            </h1>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap size-50 bg-white">
+            <h2>
+              <svg class="fa-info-circle large">
+                <use xlink:href="#fa-info-circle"></use>
+              </svg>
+              <strong>A bit of context</strong>
+            </h2>
+            <hr>
+            <p><a href="http://firstround.com/review/The-woman-behind-the-Netflix-Culture-doc/">Patty McCord</a> created <a href="https://jobs.netflix.com/life-at-netflix">Netflix's culture</a>. She wrote the document called <strong>"Netflix Culture: Freedom & Responsibility."</strong> (2009). So far, it's been shared over 16 million times on <a href="https://www.slideshare.net/reed2001/culture-1798664">Slideshare</a> and has been called "the most important document ever to come out of the Valley" by Sheryl Sandberg.</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50">
+            <h2><strong>7 Aspects</strong> of our Culture</h2>
+            <hr>
+            <ol class="text-cols">
+              <li><strong>Values are what we Value</strong></li>
+              <li>High Performance</li>
+              <li>Freedom & Responsibility</li>
+              <li>Context, not Control</li>
+              <li>Highly Alined, Loosely Coupled</li>
+              <li>Pay Top of Market</li>
+              <li>Promotions & Development</li>
+            </ol>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50 bg-white">
+            <h3><strong>1/7 Values are what we value</strong></h3>
+            <p class="text-intro">Make your values mean something.</p>
+            <hr>
+            <p>Many companies have nice sounding value statements displayed in the lobby. Enron, whose leaders went to jail, and which went <strong>bankrupt from <a href="https://www.youtube.com/watch?v=jrEf8uabe7E">fraud</a></strong> had these values displayed in their lobby: <strong>integrity, communication, respect, and excellence</strong>.</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50">
+            <h2><strong>9 Behaviors</strong></h2>
+            <p class="text-intro">At Netflix, we particularly value the following nine behaviors and skills. We hire and promote people who demonstrate these nine.</p>
+            <hr>
+            <ol class="text-cols">
+              <li>Judgment</li>
+              <li>Communication</li>
+              <li>Impact</li>
+              <li>Curiosity</li>
+              <li>Innovation</li>
+              <li>Courage</li>
+              <li>Passion</li>
+              <li>Honesty</li>
+              <li>Selflessness</li>
+            </ol>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50">
+            <h2><strong>7 Aspects</strong> of our Culture</h2>
+            <hr>
+            <ol class="text-cols">
+              <li><strong>Values are what we Value</strong></li>
+              <li><strong>High Performance</strong></li>
+              <li>Freedom & Responsibility</li>
+              <li>Context, not Control</li>
+              <li>Highly Alined, Loosely Coupled</li>
+              <li>Pay Top of Market</li>
+              <li>Promotions & Development</li>
+            </ol>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-black">
+          <span class="background dark" style="background-image:url('https://source.unsplash.com/8lUTnkZXZSA/1600x800')"></span>
+          <div class="wrap">
+            <h3><strong>2/7 High Performance</strong></h3>
+            <ul class="flexblock features">
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-users">
+                      <use xlink:href="#fa-users"></use>
+                    </svg>
+                    We're a team
+                  </h2>
+                  not a family.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-trophy">
+                      <use xlink:href="#fa-trophy"></use>
+                    </svg>
+                    We're a pro sports team
+                  </h2>
+                  not a kid's recreational team.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-star">
+                      <use xlink:href="#fa-star"></use>
+                    </svg>
+                    We have stars
+                  </h2>
+                  in every position.
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="slide-top">
+          <div class="wrap">
+            <div class="content-left">
+              <h3>1/9 left top</h3>
+              <p>Put content wherever you want. Have less. Do more. Create beautiful solutions.</p>
+              <p><code>.slide-top and .content-left</code></p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="slide-top">
+          <div class="wrap">
+            <div class="content-center">
+              <h3>2/9 center top</h3>
+              <p>Your story needs to be clear. A great lasting story is about everyone or it will not last. </p>
+              <p><code>.slide-top and .content-center</code></p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="slide-top">
+          <div class="wrap">
+            <div class="content-right">
+              <h3>3/9 right top</h3>
+              <p>Your story needs to be short. Select words carefully, each one must convey a meaning.</p>
+              <p><code>.slide-top and .content-right</code></p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <div class="content-left">
+              <h3>4/9 left center</h3>
+              <p>Your slides should be clear and well structured. What's the point of the story? Why is that relevant?</p>
+              <p><code>.content-left</code></p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <div class="content-center">
+              <h3>5/9 center</h3>
+              <p>Stories are all around us. They are what move us, make us feel alive, and inspire us.</p>
+              <p><code>.content-center</code></p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <div class="content-right">
+              <h3>6/9 right center</h3>
+              <p>Your presentation should have the same elements as a good book. Action, failure, and success. </p>
+              <p><code>.content-right</code></p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="slide-bottom">
+          <div class="wrap">
+            <div class="content-left">
+              <h3>7/9 left bottom</h3>
+              <p>How to tell strategic stories? What Promised Land is the company conveying through its words and images.</p>
+              <p><code>.slide-bottom</code> and <code>.content-left</code></p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="slide-bottom">
+          <div class="wrap">
+            <div class="content-center">
+              <h3>8/9 center bottom</h3>
+              <p>What's the Promised Land? What change do you want to bring to the world? The Promised Land is the North Star.</p>
+              <p><code>.slide-bottom</code> and <code>.content-center</code></p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="slide-bottom">
+          <div class="wrap">
+            <div class="content-right">
+              <h3>9/9 right bottom</h3>
+              <p>Your origin story helps people decide whether or not to trust you. How was your life before the life-changing event?</p>
+              <p><code>.slide-bottom</code> and <code>.content-right</code></p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="fullscreen">
+          <div class="card-50">
+            <figure>
+              <img src="https://source.unsplash.com/2QHEC81Dt0c/" alt="Áqaba, Jordan">
+              <figcaption>
+                <a href="https://unsplash.com/@dburka" title="Daniel Burka">
+                  <svg class="fa-camera">
+                    <use xlink:href="#fa-camera"></use>
+                  </svg>
+                  Daniel Burka (Unsplash)
+                </a>
+              </figcaption>
+            </figure>
+            <!-- end figure-->
+            <div class="flex-content">
+              <h2>Discover Jordan
+              </h2>
+              <p>.fullscreen > .card-50</p>
+              <p class="text-intro">Aqaba is the only coastal city in Jordan and the largest and most populous city on the Gulf of Aqaba.</p>
+              <p class="aligncenter"><a class="button" href="https://en.wikipedia.org/wiki/Aqaba">Read more &raquo;</a></p>
+            </div>
+            <!-- end .flex-content-->
+          </div>
+          <!-- end .card-50-->
+        </section>
+        <section class="bg-primary">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50">
+            <blockquote class="text-quote">
+              <p>Finally, everything you need to make HTML presentations in a simple way.</p>
+              <p><cite><a href="https://twitter.com/jlantunez">@jlantunez</a></cite></p>
+            </blockquote>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <span class="background" style="background-image:url('https://source.unsplash.com/M-H70CDJnDI/1600x800')"></span>
+          <div class="wrap size-60 bg-trans-dark">
+            <h4><strong>Why are we so manic on high performance?</strong></h4>
+            <p class="text-intro">In procedural work, the best are 2x better than the average.</p>
+            <hr>
+            <p class="text-intro">In creative work, the best are 10x better than the average, so huge premium on creating effective teams of the best.</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>     
+      </article>
+    </main>
+    <!--main-->
+    
+    <footer>
+      <div class="wrap">
+        <p>
+          <span class="alignright"><a href="https://no-kill-switch.ghost.io/" title="No Kill Switch"><img src="../static/images/logos/nks_white.png" alt="No Kill Switch"></a></span>
+        </p>
+      </div>
+    </footer>
+    
+    <!-- Required -->
+    <script src="../static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script> <!-- Autoslide? window.ws = new WebSlides({ autoslide: 8000 }); -->
+    
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../static/js/svg-icons.js"></script>
+    
+  </body>
+</html>
