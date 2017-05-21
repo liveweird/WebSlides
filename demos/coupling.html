@@ -3,47 +3,47 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- CLEAN MARKUP = GOOD KARMA.
       Hi source code lover,
-      
+
       you're a curious person and a fast learner ;)
       Let's make something beautiful together. Contribute on Github:
       https://github.com/webslides/webslides
-      
+
       Thanks!
     -->
-      
+
     <!-- SEO -->
     <title>Coupling</title>
     <meta name="description" content="By far not everything you'd like to know about coupling">
-    
+
     <!-- URL CANONICAL -->
     <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
-    
+
     <!-- CSS Base -->
     <link rel="stylesheet" type="text/css" media="all" href="../static/css/base.css">
-    
+
     <!-- CSS Colors -->
     <link rel="stylesheet" type="text/css" media="all" href="../static/css/colors.css">
-    
+
     <!-- Optional - CSS SVG Icons (Font Awesome) -->
     <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
-    
+
     <!-- SOCIAL CARDS (ADD YOUR INFO) -->
-    
+
     <!-- FACEBOOK -->
     <!-- EDIT -->
     <meta property="og:url" content="https://no-kill-switch.ghost.io/">
-    
+
     <!-- EDIT -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="WebSlides: Coupling" />
     <meta property="og:description" content="By far not everything you'd like to know about coupling">
-    
+
     <!-- EDIT -->
     <meta property="og:updated_time" content="2017-05-20T16:24:56">
     <!-- EDIT -->
@@ -51,11 +51,11 @@
     <!-- EDIT -->
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="429">
-    
+
     <!-- TWITTER -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@webslides">
-    
+
     <!-- EDIT -->
     <meta name="twitter:creator" content="@liveweird">
     <!-- EDIT -->
@@ -64,9 +64,9 @@
     <meta name="twitter:description" content="By far not everything you'd like to know about coupling">
     <!-- EDIT -->
     <meta name="twitter:image" content="../static/images/share-webslides.jpg">
-    
+
     <!-- EDIT -->
-    
+
     <!-- FAVICONS -->
     <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
     <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
@@ -75,12 +75,12 @@
     <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
     <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
     <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
-    
+
     <!-- Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#333333">
   </head>
-  
+
   <body>
     <header role="banner">
       <nav role="navigation">
@@ -106,16 +106,16 @@
         </ul>
       </nav>
     </header>
-    
+
     <main role="main">
       <article id="webslides">
-      
+
         <!-- Quick Guide
           - Each parent <section> in the <article id="webslides"> element is an individual slide.
           - Vertical sliding = <article id="webslides" class="vertical">
           - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
         -->
-          
+
         <section class="bg-red">
           <span class="background dark" style="background-image:url('https://source.unsplash.com/HrUg-9bpc9E/1600x800')"></span>
           <!--.wrap = container (width: 90%) -->
@@ -126,7 +126,7 @@
           <!-- .end .wrap -->
         </section>
         <section class="bg-purple bg-gradient-h">
-          <div class="wrap size-50">
+          <div class="wrap size-60">
             <h1>
               <svg class="fa-info-circle large">
                 <use xlink:href="#fa-info-circle"></use>
@@ -135,11 +135,11 @@
             </h1>
             <div class="grid">
               <div class="column">
-                <h3>#engineeringmanager</h3>
+                <h4><strong>Engineering Manager</strong></h4>
                 <p class="text-intro">#lean #kanban #engineeringculture</p>
               </div>
               <div class="column">
-                <h3>#systemsarchitect</h3>
+                <h4><strong>Systems Architect</strong></h4>
                 <p class="text-intro">#dotnet #webdev #elixirlang #dddesign</p>
               </div>
             </div>
@@ -153,24 +153,19 @@
             <ul class="flexblock specs">
               <!-- li>a? Add blink = <ul class="flexblock steps blink">-->
               <li>
-                <h1><strong>01.</strong> Theory</h1>
-                <p>What's coupling (& cohesion)</p>
+                <h4><strong>01.</strong> Theory</h4>
               </li>
               <li>
-                <h1><strong>02.</strong> Flavours</h1>
-                <p>All flavours of coupling (you should care about)</p>
+                <h4><strong>02.</strong> Flavours</h4>
               </li>
               <li>
-                <h1><strong>03.</strong> Measuring</h1>
-                <p>Can one truly measure coupling & what for?</p>
+                <h4><strong>03.</strong> Measuring</h4>
               </li>
               <li>
-                <h1><strong>04.</strong> Consequences</h1>
-                <p>What happens if coupling gets out of control</p>
+                <h4><strong>04.</strong> Consequences</h4>
               </li>
               <li>
-                <h1><strong>05.</strong> Countermeasures</h1>
-                <p>Can one fight coupling? Should one? Why so?</p>
+                <h4><strong>05.</strong> Countermeasures</h4>
               </li>
             </ul>
           </div>
@@ -184,8 +179,26 @@
           </div>
           <!-- .end .wrap -->
         </section>
-
-
+        <section class="bg-red">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-60">
+            <blockquote class="text-quote">
+              <p>"<strong>Coupling</strong> is the degree of interdependence between software modules; a measure of how closely connected two routines or modules are; the strength of the relationships between modules."</p>
+              <p><cite><a href="https://en.wikipedia.org/wiki/Coupling_(computer_programming)">Wikipedia</a></cite></p>
+            </blockquote>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-purple">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-60">
+            <blockquote class="text-quote">
+              <p>"<strong>Cohesion</strong> refers to the degree to which the elements inside a module belong together. Thus, cohesion measures the strength of relationship between pieces of functionality within a given module. For example, in highly cohesive systems functionality is strongly related."</p>
+              <p><cite><a href="https://en.wikipedia.org/wiki/Cohesion_(computer_science)">Wikipedia</a></cite></p>
+            </blockquote>
+          </div>
+          <!-- .end .wrap -->
+        </section>
 
         <section>
           <!--.wrap = container (width: 90%) -->
@@ -410,11 +423,11 @@
             <p class="text-intro">In creative work, the best are 10x better than the average, so huge premium on creating effective teams of the best.</p>
           </div>
           <!-- .end .wrap -->
-        </section>     
+        </section>
       </article>
     </main>
     <!--main-->
-    
+
     <footer>
       <div class="wrap">
         <p>
@@ -422,15 +435,15 @@
         </p>
       </div>
     </footer>
-    
+
     <!-- Required -->
     <script src="../static/js/webslides.js"></script>
     <script>
       window.ws = new WebSlides();
     </script> <!-- Autoslide? window.ws = new WebSlides({ autoslide: 8000 }); -->
-    
+
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
     <script defer src="../static/js/svg-icons.js"></script>
-    
+
   </body>
 </html>
