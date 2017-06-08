@@ -201,43 +201,93 @@
         </section>
         <section class="bg-purple">
           <div class="wrap">
-            <div class="card-50">
-              <div class="flex-content" style="justify-content: initial">
-                <p class="text-context">COUPLING VS COHESION</p>
-                <hr/>
-                <h4>
-                  <strong>Coupling:</strong>
-                  interdependencies between "modules"
-                </h4>
-                <h4>
-                  <strong>Cohesion:</strong>
-                  how related the functions within a single "module" are
-                </h4>
-              </div>
-              <img src="../static/images/diagrams/coupling_cohesion.png" alt="Coupling and cohesion">
+            <div class="flex-content size-50 alignleft">
+              <p class="text-context">COUPLING VS COHESION</p>
+              <hr/>
+              <h4>
+                <strong>Coupling:</strong>
+                interdependencies between "modules"
+              </h4>
+              <h4>
+                <strong>Cohesion:</strong>
+                how related the functions within a single "module" are
+              </h4>
             </div>
+            <img class="size-40 alignright" src="../static/images/diagrams/coupling_cohesion.png" alt="Coupling and cohesion">
           </div>
           <!-- .end .wrap -->
         </section>
         <section class="bg-red">
           <div class="wrap">
-            <div class="card-30">
-              <img src="../static/images/diagrams/coupling_appears.png" alt="Coupling appears when ...">
-              <div class="flex-content" style="justify-content: initial">
-                <p class="text-context">COUPLING APPEARS WHEN ...</p>
-                <hr/>
-                <h4>
-                  A <strong>contains</strong> B
-                </h4>
-                <h4>
-                  A <strong>calls</strong> B
-                </h4>
-                <h4>
-                  A's <strong>internal service uses</strong> B
-                </h4>
-                <h4>
-                  A <strong>derives from</strong> B
-                </h4>
+            <img class="size-40 alignleft" src="../static/images/diagrams/coupling_appears.png" alt="Coupling appears when ...">
+            <div class="flex-content size-50 alignright">
+              <p class="text-context">COUPLING APPEARS WHEN ...</p>
+              <hr/>
+              <h4>
+                A <strong>contains</strong> B
+              </h4>
+              <h4>
+                A <strong>calls</strong> B
+              </h4>
+              <h4>
+                A's <strong>internal service uses</strong> B
+              </h4>
+              <h4>
+                A <strong>derives from</strong> B
+              </h4>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-black-blue">
+          <span class="background dark" style="background-image:url('../static/images/bgrounds/coupling.jpg')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1 class="text-landing">Types of Cohesion</h1>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-gray">
+          <div class="wrap">
+            <div style="justify-content: initial">
+              <div style="margin-left: 20%; margin-right: 20%">
+                <p class="text-context">TYPES OF COHESION - 1/3</p>
+              </div>
+              <p></p>
+              <div class="content-center" style="width: auto" >
+                <img style="height: 360px" src="../static/images/diagrams/cohesion_logical.png" alt="Logical cohesion">
+                <img style="height: 360px" src="../static/images/diagrams/cohesion_temporal.png" alt="Temporal cohesion">
+                <img style="height: 360px" src="../static/images/diagrams/cohesion_procedural.png" alt="Procedural cohesion">
+              </div>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-gray">
+          <div class="wrap">
+            <div style="justify-content: initial">
+              <div style="margin-left: 20%; margin-right: 20%">
+                <p class="text-context">TYPES OF COHESION - 2/3</p>
+              </div>
+              <p></p>
+              <div class="content-center" style="width: auto" >
+                <img style="height: 360px" src="../static/images/diagrams/cohesion_coincidental.png" alt="Coincidental cohesion">
+                <img style="height: 360px" src="../static/images/diagrams/cohesion_communicational.png" alt="Communicational cohesion">
+              </div>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-gray">
+          <div class="wrap">
+            <div style="justify-content: initial">
+              <div style="margin-left: 20%; margin-right: 20%">
+                <p class="text-context">TYPES OF COHESION - 3/3</p>
+              </div>
+              <p></p>
+              <div class="content-center" style="width: auto" >
+                <img style="height: 360px" src="../static/images/diagrams/cohesion_technical.png" alt="Technical cohesion">
+                <img style="height: 360px" src="../static/images/diagrams/cohesion_functional.png" alt="Functional cohesion">
               </div>
             </div>
           </div>
@@ -257,7 +307,7 @@
               <div style="margin-left: 20%; margin-right: 20%">
                 <p class="text-context">COUPLING VS DELIVERY LIFE-CYCLE ...</p>
               </div>
-              <hr/>
+              <p></p>
               <div class="content-center" >
                 <img src="../static/images/diagrams/coupling_vs_time.png" alt="Coupling VS Time">
               </div>
@@ -267,34 +317,76 @@
         </section>
         <section class="bg-gray">
           <div class="wrap">
-            <div class="card-30">
-              <img src="../static/images/diagrams/coupling_content.png" alt="Content coupling">
-              <div class="flex-content" style="justify-content: initial">
-                <p class="text-context">CONTENT COUPLING</p>
-                <hr/>
-                <ul>
-                  <li>
-                    <h4>
-                      No clear state (data) ownership
-                    </h4>
-                  </li>
-                  <li>
-                    <h4>
-                      Overlapping responsibilities
-                    </h4>
-                  </li>
-                  <li>
-                    <h4>
-                      Problems with setting up boundaries
-                    </h4>
-                  </li>
-                  <li>
-                    <h4>
-                      Repetitions & redundancy
-                    </h4>
-                  </li>
-                </ul>
-              </div>
+            <img class="size-40 alignleft" src="../static/images/diagrams/coupling_content.png" alt="Content coupling">
+            <div class="flex-content size-50 alignright">
+              <p class="text-context">CONTENT COUPLING</p>
+              <hr/>
+              <ul>
+                <li>
+                  <h4>
+                    No clear state (data) ownership
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Overlapping responsibilities
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Problems with setting up boundaries
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Repetitions & redundancy
+                  </h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-green">
+          <div class="wrap">
+            <div class="flex-content size-50 alignleft">
+              <p class="text-context">COMMON COUPLING</p>
+              <hr/>
+              <ul>
+                <li>
+                  <h4>
+                    Shared data set ...
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    ... or shared service(s)
+                  </h4>
+                </li>
+              </ul>
+            </div>
+            <img class="size-40 alignright" src="../static/images/diagrams/coupling_common.png" alt="Common coupling">
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-green">
+          <div class="wrap">
+            <img class="size-40 alignright" src="../static/images/diagrams/coupling_temporal.png" alt="Temporal coupling">
+            <div class="flex-content size-50 alignleft">
+              <p class="text-context">TEMPORAL COUPLING</p>
+              <hr/>
+              <ul>
+                <li>
+                  <h4>
+                    Shared data set ...
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    ... or shared service(s)
+                  </h4>
+                </li>
+              </ul>
             </div>
           </div>
           <!-- .end .wrap -->
