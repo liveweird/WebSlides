@@ -54,16 +54,16 @@ svg {
 [class*="bg-gradient-"] a {
   color: #bce;
 }
-.bg-brown a {color: #c23;}
+.bg-brown a {color: #cc93a2;}
 
 a,
 .bg-white a,
 .bg-light a,.bg-gradient-white a {
-  color: #44d;
+  color: #a79ddd;
 }
 
 a:hover {
-  color: #3af;
+  color: #33aaff;
 }
 .flexblock li>a,[class*="bg-"] li>a,
 [class*="bg-gradient-"] li>a,
@@ -72,8 +72,8 @@ article header a {
 }
 
 hr {
-  background: rgba(0, 20, 80, 0.2);
   background: radial-gradient(ellipse at center, rgba(0, 20, 80, 0.2) 0, rgba(255, 255, 255, 0) 75%);
+  background: rgba(0, 20, 80, 0.2);
 }
 
 hr:after {
@@ -128,11 +128,11 @@ Slides - Backgrounds <section class="bg-primary">
 /*3 Corp Colors*/
 
 .bg-primary {
-  background-color: #44d;
+  background-color: #9a95dd;
 }
 
 .bg-secondary {
-  background-color: #67d;
+  background-color: #aaafdd;
 }
 
 .bg-light {
@@ -148,7 +148,7 @@ Slides - Backgrounds <section class="bg-primary">
   background-color: #123;
 }
 .bg-blue {
-  background-color: #346;
+  background-color: #a1a9ce;
 }
 .bg-brown {
   background-color: #f8f8f9;
@@ -157,14 +157,14 @@ Slides - Backgrounds <section class="bg-primary">
   background-color: #d5d9e2;
 }
 .bg-green {
-  background-color: #077;
+  background-color: #7dc1a4;
 }
 .bg-purple {
-  background-color: #62b;
+  background-color: #b684bb;
 }
 
 .bg-red {
-  background-color: #c23;
+  background-color: #cc8387;
 }
 
 .bg-white {
@@ -190,13 +190,18 @@ Slides - Backgrounds <section class="bg-primary">
 
 
 /*Font Color*/
-.bg-trans-dark,.bg-trans-gradient,
+.bg-trans-dark,.bg-facebook,.bg-apple,[class*="bg-black"] {
+  color: #ffffff;
+  text-shadow: 0 1px 0 #0b0e2f;
+}
+
+/*Font Color*/
+.bg-trans-gradient,
 .bg-primary,
 .bg-secondary,
 .bg-blue,
-.bg-green,.bg-purple,.bg-red,.bg-facebook,.bg-apple,[class*="bg-black"],[class*="bg-gradient-"] {
-  color: #fff;
-  text-shadow: 0 1px 0 #013;
+.bg-green,.bg-purple,.bg-red,[class*="bg-gradient-"] {
+  color: #000000;
 }
 
 .bg-light p {
@@ -224,21 +229,21 @@ background: linear-gradient(to top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
 /*Horizontal Gradient*/
 
 .bg-gradient-h {
-  background: linear-gradient(134deg,#32b 0,#62b 100%);
+  background: linear-gradient(134deg, #868abb 0, #bb8bba 100%);
 }
 
 
 /*Vertical Gradient*/
 
 .bg-gradient-v {
-  background: linear-gradient(to top, #62b 0%, #32b 100%);
+  background: linear-gradient(to top, #9d83bb 0%, #7d85bb 100%);
 }
 
 
 /*Radial Gradient*/
 
 .bg-gradient-r {
-  background: radial-gradient(ellipse at center, #62b 0%, #32b 100%);
+  background: radial-gradient(ellipse at center, #a186bb 0%, #7a8fbb 100%);
 }
 
 /*White Gradient (vertical)*/
@@ -290,7 +295,7 @@ border-top: none;
 /* -- Context  -- */
 
 [class*="bg-"] .text-context:before {
-  background-color: #fff;
+  background-color: #000000;
 }
 .text-context:before,.bg-white .text-context:before{
   background-color: rgba(0, 20, 80, 0.2);
@@ -379,7 +384,7 @@ nav li.email a:hover {
 }
 
 /*=========================================
-Features & Clients List 
+Features & Clients List
 =========================================== */
 
 .features li,.clients li  {
@@ -415,7 +420,7 @@ box-shadow: 0 8px 16px rgba(0,20,80,.02),0 4px 16px rgba(0,0,0,.08);
 }
 
 /*===========================================
-flexblock.steps 
+flexblock.steps
 ============================================= */
 
 .steps li:nth-child(1) {
@@ -708,7 +713,7 @@ background-color: rgba(0, 20, 80, 0.06);
     border-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent) 1 100%;
     -webkit-border-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent) 1 100%;
     -moz-border-image: -moz-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent) 1 100%;
-    
+
   }
 }
 
@@ -742,7 +747,7 @@ tr:nth-child(even)>td:hover {
 
 
 /*============================
-Browser (Screenshots) 
+Browser (Screenshots)
 ============================== */
 
 .browser {
@@ -802,7 +807,7 @@ button[type="submit"],
 input[type="submit"],
 .button,.button:hover,
 button[type="submit"]:hover,
-input[type="submit"]:hover 
+input[type="submit"]:hover
 {
   border: 1px solid #44d;
 }
@@ -823,7 +828,7 @@ background-color: #17d;
 .bg-primary .button,
 .bg-primary button,.bg-primary button:hover,
 .bg-primary input,
-[class*="bg-gradient-"] .button,[class*="bg-"] a.button.ghost 
+[class*="bg-gradient-"] .button,[class*="bg-"] a.button.ghost
 {
   border-color: #fff;
 }
