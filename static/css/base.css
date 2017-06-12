@@ -50,6 +50,7 @@
   15. Longform Elements
 	16. Safari Bug (flex-wrap)
 	17. Print
+	18. Custom
 
 ----------------------------------------------------------------------------------- */
 
@@ -3347,4 +3348,26 @@ Solution: stackoverflow.com/questions/34250282/flexbox-safari-bug-flex-wrap
   #counter, #navigation {
     display: none;
   }
+}
+
+/*=========================================
+18. CUSTOM
+=========================================== */
+
+div .hashtags {
+  position: absolute;
+  float: none;
+  bottom: -100px;
+  left: 200px;
+  font-size: 36px;
+  font-weight: 600;
+
+  text-transform: lowercase;
+  text-rendering: optimizeLegibility;
+
+  color: #2c2c2c;
+  letter-spacing: .05em;
+  text-shadow:
+    2px 2px 0px #d5d5d5,
+    4px 4px 0px rgba(0, 0, 0, 0.2);
 }
