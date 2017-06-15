@@ -52,18 +52,18 @@ svg {
 
 [class*="bg-"] a,
 [class*="bg-gradient-"] a {
-  color: #bce;
+  color: #346;
 }
-.bg-brown a {color: #cc93a2;}
+.bg-brown a {color: #346;}
 
 a,
 .bg-white a,
 .bg-light a,.bg-gradient-white a {
-  color: #a79ddd;
+  color: #346;
 }
 
 a:hover {
-  color: #33aaff;
+  color: #226655;
 }
 .flexblock li>a,[class*="bg-"] li>a,
 [class*="bg-gradient-"] li>a,
