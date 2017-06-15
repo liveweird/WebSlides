@@ -952,8 +952,8 @@ h2 svg, h3 svg, h4 svg {
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 5.6rem;
+  font-size: 6.4rem;
+  line-height: 6.4rem;
 }
 
 h1 span {
@@ -961,22 +961,22 @@ h1 span {
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 5.6rem;
   line-height: 4.8rem;
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 4.8rem;
   line-height: 4rem;
 }
 
 h4 {
-  font-size: 2.2rem;
+  font-size: 4rem;
   line-height: 4rem;
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
   line-height: 3.2rem;
 }
@@ -991,19 +991,19 @@ h3.alignleft + p.alignright {margin-top: .4rem;margin-bottom: 0;}
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 5.6rem;
+    font-size: 6.4rem;
     line-height: 7.2rem;
   }
   h2 {
-    font-size: 4.8rem;
+    font-size: 5.6rem;
     line-height: 6.4rem;
   }
   h3 {
-    font-size: 4rem;
+    font-size: 4.8rem;
     line-height: 5.6rem;
   }
   h4 {
-    font-size: 3.2rem;
+    font-size: 4rem;
     line-height: 4.8rem;
   }
 }
@@ -1160,7 +1160,7 @@ line-height: 16rem;
   padding-left: 20px;
   padding-bottom: 15px;
   padding-right: 20px;
-  font-size: 200%;
+  font-size: 280%;
 }
 .text-context.text-uppercase {
   letter-spacing: .1rem
@@ -2955,8 +2955,8 @@ position: relative; /* Versatility: blockquote, p, h2... */
     padding-left: 6.4rem;
   }
   .text-quote p,.wall p {
-    font-size: 3.2rem;
-    line-height: 4.8rem;
+    font-size: 4.8rem;
+    line-height: 5.4rem;
   }
   .text-quote:before,.wall:before {
     top: -1.6rem;
@@ -3360,7 +3360,7 @@ Solution: stackoverflow.com/questions/34250282/flexbox-safari-bug-flex-wrap
 div .title {
   position: absolute;
   float: none;
-  top: -100px;
+  top: -12rem;
 }
 
 div .hashtags {
@@ -3402,7 +3402,7 @@ ol.fancy ol.fancy {
 ol.fancy li{
     position: relative;
     display: block;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     padding-left: 1em;    
 }
 
@@ -3447,7 +3447,7 @@ ul.fancy ul.fancy {
 ul.fancy li{
     position: relative;
     display: block;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     padding-left: 1em;
 }
 
