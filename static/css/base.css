@@ -2850,7 +2850,10 @@ object-fit to re-frame images rather than just stretch and resize them  === */
   }
   .flex-content,
   [class*="card"] blockquote {
-    padding: 4.8rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
   }
   .fullscreen [class*="card"] .flex-content,
   .fullscreen [class*="card"] blockquote {
