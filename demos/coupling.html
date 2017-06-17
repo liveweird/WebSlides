@@ -116,17 +116,16 @@
           - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
         -->
 
-        <section class="bg-red">
-          <span class="background dark" style="background-image:url('https://source.unsplash.com/HrUg-9bpc9E/1600x800')"></span>
+        <section class="bg-green">
+          <span class="background dark" style="background-image:url('../static/images/bgrounds/vines.jpg')"></span>
           <!--.wrap = container (width: 90%) -->
           <div class="wrap aligncenter">
             <h1><strong>Coupling</strong>: how the evil pixies plait your software in braids</h1>
-            <h5>... or so you think they do</h5>
           </div>
           <!-- .end .wrap -->
         </section>
         <section class="bg-purple bg-gradient-h">
-          <div class="wrap size-60">
+          <div class="wrap size-80">
             <h1>
               <svg class="fa-info-circle large">
                 <use xlink:href="#fa-info-circle"></use>
@@ -147,8 +146,18 @@
           </div>
           <!-- .end .wrap -->
         </section>
-        <section class="bg-green">
-          <span class="background dark" style="background-image:url('https://source.unsplash.com/RLw-UC03Gwc/1600x800')"></span>
+        <section class="slide-top">
+          <span class="background dark" style="background-image:url('../static/images/bgrounds/elixir.jpg'); background-size: cover 100%"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="text-context content-left">
+              <h1><strong>Passionate Alchemist</strong></h1>
+            </div>            
+          </div>
+          <!-- .end .wrap -->
+        </section>        
+        <section class="bg-red">
+          <span class="background dark" style="background-image:url('../static/images/bgrounds/road.jpg')"></span>
           <div class="wrap size-70">
             <ul class="flexblock specs">
               <!-- li>a? Add blink = <ul class="flexblock steps blink">-->
@@ -178,46 +187,6 @@
             <div class="text-context content-left">
               <h1><strong>Awwww ...</strong></h1>
               <h1><strong>Greenfields ...</strong></h1>
-            </div>            
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="slide-top">
-          <span class="background dark" style="background-image:url('../static/images/bgrounds/shredded.jpg'); background-size: cover 100%"></span>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="text-context content-left">
-              <h1><strong>Domain Shredding</strong></h1>
-            </div>            
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="slide-top">
-          <span class="background dark" style="background-image:url('../static/images/bgrounds/centric.jpg'); background-size: cover 100%"></span>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="text-context content-right">
-              <h1><strong>"Something-centric" Models</strong></h1>
-            </div>            
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="slide-bottom">
-          <span class="background dark" style="background-image:url('../static/images/bgrounds/boundaries.jpg'); background-size: cover 100%"></span>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="text-context content-right">
-              <h1><strong>Boundaries</strong></h1>
-            </div>            
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="slide-bottom">
-          <span class="background dark" style="background-image:url('../static/images/bgrounds/julian.jpg'); background-size: cover 100%"></span>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="text-context content-right">
-              <h1><strong>Context is KING</strong></h1>
             </div>            
           </div>
           <!-- .end .wrap -->
@@ -296,49 +265,90 @@
                 </li>
               </ul>
             </div>
-            <div class="hashtags">#emergentcomposition</div>
+            <div class="alignleft hashtags">#emergentcomposition</div>
           </div>
           <!-- .end .wrap -->
         </section>
-        <section class="bg-red">
+        <section class="slide-bottom">
+          <span class="background dark" style="background-image:url('../static/images/bgrounds/boundaries.jpg'); background-size: cover 100%"></span>
+          <!--.wrap = container (width: 90%) -->
           <div class="wrap">
-            <div class="alignleft title text-context">COUPLING CATALYSTS</div>
-            <figure class="size-50 alignleft">
-              <img style="max-height: 540px; float: right" src="../static/images/diagrams/coupling_appears.png" alt="Coupling appears when ...">
-            </figure>
-            <div class="flex-content size-40 alignleft">
-              <ol class="fancy">
-                <li>
-                  <h4>
-                    A <strong>contains</strong> B
-                  </h4>
-                </li>
-                <li>
-                  <h4>
-                    A <strong>calls</strong> B
-                  </h4>
-                </li>
-                <li>                  
-                  <h4>
-                    A's <strong>internal service uses</strong> B
-                  </h4>
-                </li>
-                <li>                 
-                  <h4>
-                    A <strong>derives from</strong> B
-                  </h4>
-                </li>
-              </ol>
+            <div class="text-context content-right">
+              <h1><strong>Boundaries</strong></h1>
+            </div>            
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-black-blue">
+          <span class="background dark" style="background-image:url('../static/images/bgrounds/coupling.jpg')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1 class="text-landing">Types of Cohesion</h1>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-gray">
+          <div class="wrap aligncenter">
+            <div style="display: inline-block">
+              <div class="alignleft">
+                <p class="text-context">TYPES OF COHESION - 1/3</p>
+              </div>
+              <p>&nbsp;</p>
+              <div class="aligncenter" style="width: auto; padding-top: 20px;" >
+                <img style="height: 360px" src="../static/images/diagrams/cohesion_logical.png" alt="Logical cohesion">
+                <img style="height: 360px" src="../static/images/diagrams/cohesion_temporal.png" alt="Temporal cohesion">
+                <img style="height: 360px" src="../static/images/diagrams/cohesion_procedural.png" alt="Procedural cohesion">
+              </div>
             </div>
           </div>
           <!-- .end .wrap -->
         </section>
-
+        <section class="bg-gray">
+          <div class="wrap aligncenter">
+            <div style="display: inline-block">
+              <div class="alignleft">
+                <p class="text-context">TYPES OF COHESION - 2/3</p>
+              </div>
+              <p>&nbsp;</p>
+              <div class="aligncenter" style="width: auto; padding-top: 20px;" >
+                <img style="height: 360px" src="../static/images/diagrams/cohesion_coincidental.png" alt="Coincidental cohesion">
+                <img style="height: 360px" src="../static/images/diagrams/cohesion_communicational.png" alt="Communicational cohesion">
+              </div>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-gray">
+          <div class="wrap aligncenter">
+            <div style="display: inline-block">
+              <div class="alignleft">
+                <p class="text-context">TYPES OF COHESION - 3/3</p>
+              </div>
+              <p>&nbsp;</p>
+              <div class="aligncenter" style="width: auto; padding-top: 20px;" >
+                <img style="height: 360px" src="../static/images/diagrams/cohesion_technical.png" alt="Technical cohesion">
+                <img style="height: 360px" src="../static/images/diagrams/cohesion_functional.png" alt="Functional cohesion">
+              </div>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
         <section class="bg-black-blue">
           <span class="background dark" style="background-image:url('../static/images/bgrounds/coupling.jpg')"></span>
           <!--.wrap = container (width: 90%) -->
           <div class="wrap aligncenter">
             <h1 class="text-landing">The issue of scaling</h1>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="slide-top">
+          <span class="background dark" style="background-image:url('../static/images/bgrounds/size.jpg'); background-size: cover 100%"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="text-context content-left">
+              <h1><strong>Size Does Matter</strong></h1>
+              <h3>or rather: scale does</h3>
+            </div>            
           </div>
           <!-- .end .wrap -->
         </section>
@@ -405,6 +415,16 @@
           </div>
           <!-- .end .wrap -->
         </section>
+        <section class="slide-top">
+          <span class="background dark" style="background-image:url('../static/images/bgrounds/shredded.jpg'); background-size: cover 100%"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="text-context content-left">
+              <h1><strong>Domain Shredding</strong></h1>
+            </div>            
+          </div>
+          <!-- .end .wrap -->
+        </section>        
         <section class="bg-gray">
           <div class="wrap">
             <div class="alignleft title text-context">COUPLING VS SCALING #4</div>
@@ -475,66 +495,45 @@
           </div>
           <!-- .end .wrap -->
         </section>
-
         <section class="bg-black-blue">
           <span class="background dark" style="background-image:url('../static/images/bgrounds/coupling.jpg')"></span>
           <!--.wrap = container (width: 90%) -->
           <div class="wrap aligncenter">
-            <h1 class="text-landing">Types of Cohesion</h1>
+            <h1 class="text-landing">Secrets of Coupling</h1>
           </div>
           <!-- .end .wrap -->
         </section>
-        <section class="bg-gray">
-          <div class="wrap aligncenter">
-            <div style="display: inline-block">
-              <div class="alignleft">
-                <p class="text-context">TYPES OF COHESION - 1/3</p>
-              </div>
-              <p>&nbsp;</p>
-              <div class="aligncenter" style="width: auto; padding-top: 20px;" >
-                <img style="height: 360px" src="../static/images/diagrams/cohesion_logical.png" alt="Logical cohesion">
-                <img style="height: 360px" src="../static/images/diagrams/cohesion_temporal.png" alt="Temporal cohesion">
-                <img style="height: 360px" src="../static/images/diagrams/cohesion_procedural.png" alt="Procedural cohesion">
-              </div>
+        <section class="bg-red">
+          <div class="wrap">
+            <div class="alignleft title text-context">COUPLING CATALYSTS</div>
+            <figure class="size-50 alignleft">
+              <img style="max-height: 540px; float: right" src="../static/images/diagrams/coupling_appears.png" alt="Coupling appears when ...">
+            </figure>
+            <div class="flex-content size-40 alignleft">
+              <ol class="fancy">
+                <li>
+                  <h4>
+                    A <strong>contains</strong> B
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    A <strong>calls</strong> B
+                  </h4>
+                </li>
+                <li>                  
+                  <h4>
+                    A's <strong>internal service uses</strong> B
+                  </h4>
+                </li>
+                <li>                 
+                  <h4>
+                    A <strong>derives from</strong> B
+                  </h4>
+                </li>
+              </ol>
             </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-gray">
-          <div class="wrap aligncenter">
-            <div style="display: inline-block">
-              <div class="alignleft">
-                <p class="text-context">TYPES OF COHESION - 2/3</p>
-              </div>
-              <p>&nbsp;</p>
-              <div class="aligncenter" style="width: auto; padding-top: 20px;" >
-                <img style="height: 360px" src="../static/images/diagrams/cohesion_coincidental.png" alt="Coincidental cohesion">
-                <img style="height: 360px" src="../static/images/diagrams/cohesion_communicational.png" alt="Communicational cohesion">
-              </div>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-gray">
-          <div class="wrap aligncenter">
-            <div style="display: inline-block">
-              <div class="alignleft">
-                <p class="text-context">TYPES OF COHESION - 3/3</p>
-              </div>
-              <p>&nbsp;</p>
-              <div class="aligncenter" style="width: auto; padding-top: 20px;" >
-                <img style="height: 360px" src="../static/images/diagrams/cohesion_technical.png" alt="Technical cohesion">
-                <img style="height: 360px" src="../static/images/diagrams/cohesion_functional.png" alt="Functional cohesion">
-              </div>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-black-blue">
-          <span class="background dark" style="background-image:url('../static/images/bgrounds/coupling.jpg')"></span>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap aligncenter">
-            <h1 class="text-landing">Dimensions of Coupling</h1>
+            <div class="alignleft hashtags">#objectoriented #interactions #metrics</div>
           </div>
           <!-- .end .wrap -->
         </section>
@@ -585,6 +584,16 @@
           </div>
           <!-- .end .wrap -->
         </section>
+        <section class="slide-bottom">
+          <span class="background dark" style="background-image:url('../static/images/bgrounds/julian.jpg'); background-size: cover 100%"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="text-context content-right">
+              <h1><strong>Context is KING</strong></h1>
+            </div>            
+          </div>
+          <!-- .end .wrap -->
+        </section>        
         <section class="bg-green">
           <div class="wrap">
             <div class="alignleft title text-context">COMMON COUPLING</div>
@@ -608,6 +617,16 @@
           </div>
           <!-- .end .wrap -->
         </section>
+        <section class="slide-top">
+          <span class="background dark" style="background-image:url('../static/images/bgrounds/centric.jpg'); background-size: cover 100%"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="text-context content-right">
+              <h1><strong>"Something-centric" Models</strong></h1>
+            </div>            
+          </div>
+          <!-- .end .wrap -->
+        </section>        
         <section class="bg-blue">
           <div class="wrap">
             <div class="alignleft title text-context">TEMPORAL COUPLING</div>
