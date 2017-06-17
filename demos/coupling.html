@@ -761,7 +761,142 @@
           </div>
           <!-- .end .wrap -->
         </section>
-
+        <section class="bg-black-blue">
+          <span class="background dark" style="background-image:url('../static/images/bgrounds/coupling.jpg')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1 class="text-landing">What could possibly go wrong?</h1>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="slide-top bg-red">
+          <span class="background light" style="background-image:url('../static/images/bgrounds/catastrophy.jpg'); background-size: cover 100%"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="text-context content-left">
+              <h1><strong>Symptoms:</strong></h1>
+            </div>            
+            <div class="flex-content size-90 alignright halftransparent">
+              <ol class="fancy">
+                <li>
+                  <h3>
+                    <strong>increasing connascence</strong>
+                  </h3>
+                </li>
+                <li>
+                  <h3>
+                    <strong>purely "technical" user stories</strong>
+                  </h3>
+                </li>
+                <li>
+                  <h3>
+                    <strong>abundance of: ...Managers, ...Engines, ...Controllers, ...Coordinators</strong>
+                  </h3>
+                </li>
+                <li>
+                  <h3>
+                    <strong>deteriorating testability</strong>
+                  </h3>
+                </li>
+                <li>
+                  <h3>
+                    <strong>all possible types of fragility</strong>
+                  </h3>
+                </li>
+              </ol>
+            </div>            
+          </div>
+          <!-- .end .wrap -->
+        </section>               
+        <section class="bg-gray">
+          <div class="wrap aligncenter">
+            <div style="display: inline-block">
+              <div class="alignleft">
+                <p class="text-context">DEPENDENCY HELL #1</p>
+              </div>
+              <p>&nbsp;</p>
+              <div class="aligncenter" style="width: auto; padding-top: 20px;" >
+                <img style="height: 480px" src="../static/images/diagrams/hell_many.png" alt="Many dependencies">
+                <img style="height: 480px" src="../static/images/diagrams/hell_longchain.png" alt="Long chain of dependencies">
+              </div>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-gray">
+          <div class="wrap aligncenter">
+            <div style="display: inline-block">
+              <div class="alignleft">
+                <p class="text-context">DEPENDENCY HELL #2</p>
+              </div>
+              <p>&nbsp;</p>
+              <div class="aligncenter" style="width: auto; padding-top: 20px;" >
+                <img style="height: 480px" src="../static/images/diagrams/hell_conflicting.png" alt="Conflicting dependencies">
+              </div>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-gray">
+          <div class="wrap aligncenter">
+            <div style="display: inline-block">
+              <div class="alignleft">
+                <p class="text-context">DEPENDENCY HELL #3</p>
+              </div>
+              <p>&nbsp;</p>
+              <div class="aligncenter" style="width: auto; padding-top: 20px;" >
+                <img style="height: 480px" src="../static/images/diagrams/hell_circular.png" alt="Circular dependencies">
+              </div>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-green">
+          <div class="wrap">
+            <div class="alignleft title text-context">LAW OF DEMETER #1</div>
+            <figure class="size-50 alignleft">
+              <img style="height: 480px; width: auto; float: right" src="../static/images/diagrams/law_of_demeter1.png" alt="Law of Demeter #1">
+            </figure>
+            <div class="flex-content size-40 alignleft">
+              <ul class="fancy">
+                <li>
+                  <h4>
+                    <em>"Cliens mihi servus meus cliens."</em>
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Hide the dependencies of your dependencies
+                  </h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-green">
+          <div class="wrap">
+            <div class="alignleft title text-context">LAW OF DEMETER #2</div>
+            <figure class="size-50 alignleft">
+              <img style="height: 480px; width: auto; float: right" src="../static/images/diagrams/law_of_demeter2.png" alt="Law of Demeter #2">
+            </figure>
+            <div class="flex-content size-40 alignleft">
+              <ul class="fancy">
+                <li>
+                  <h4>
+                    If you & your dependency have similar dependency, keep them separate
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    In case of too many local dependencies, consider the split
+                  </h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
         <section class="bg-black-blue">
           <span class="background dark" style="background-image:url('../static/images/bgrounds/coupling.jpg')"></span>
           <!--.wrap = container (width: 90%) -->
@@ -826,7 +961,6 @@
           </div>
           <!-- .end .wrap -->
         </section>
-
         <section class="bg-black-blue">
           <span class="background dark" style="background-image:url('../static/images/bgrounds/coupling.jpg')"></span>
           <!--.wrap = container (width: 90%) -->
@@ -1094,100 +1228,41 @@
           </div>
           <!-- .end .wrap -->
         </section>
-
-        <section class="bg-black-blue">
-          <span class="background dark" style="background-image:url('../static/images/bgrounds/coupling.jpg')"></span>
+        <section class="slide-top">
+          <span class="background dark" style="background-image:url('../static/images/bgrounds/finallap.jpg'); background-size: cover 100%"></span>
           <!--.wrap = container (width: 90%) -->
-          <div class="wrap aligncenter">
-            <h1 class="text-landing">When theory meets practice</h1>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-gray">
-          <div class="wrap aligncenter">
-            <div style="display: inline-block">
-              <div class="alignleft">
-                <p class="text-context">DEPENDENCY HELL #1</p>
-              </div>
-              <p>&nbsp;</p>
-              <div class="aligncenter" style="width: auto; padding-top: 20px;" >
-                <img style="height: 480px" src="../static/images/diagrams/hell_many.png" alt="Many dependencies">
-                <img style="height: 480px" src="../static/images/diagrams/hell_longchain.png" alt="Long chain of dependencies">
-              </div>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-gray">
-          <div class="wrap aligncenter">
-            <div style="display: inline-block">
-              <div class="alignleft">
-                <p class="text-context">DEPENDENCY HELL #2</p>
-              </div>
-              <p>&nbsp;</p>
-              <div class="aligncenter" style="width: auto; padding-top: 20px;" >
-                <img style="height: 480px" src="../static/images/diagrams/hell_conflicting.png" alt="Conflicting dependencies">
-              </div>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-gray">
-          <div class="wrap aligncenter">
-            <div style="display: inline-block">
-              <div class="alignleft">
-                <p class="text-context">DEPENDENCY HELL #3</p>
-              </div>
-              <p>&nbsp;</p>
-              <div class="aligncenter" style="width: auto; padding-top: 20px;" >
-                <img style="height: 480px" src="../static/images/diagrams/hell_circular.png" alt="Circular dependencies">
-              </div>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-green">
           <div class="wrap">
-            <div class="alignleft title text-context">LAW OF DEMETER #1</div>
-            <figure class="size-50 alignleft">
-              <img style="height: 480px; width: auto; float: right" src="../static/images/diagrams/law_of_demeter1.png" alt="Law of Demeter #1">
-            </figure>
-            <div class="flex-content size-40 alignleft">
+            <div class="text-context content-right">
+              <h1><strong>Final Lap</strong></h1>
+            </div>            
+          </div>
+          <!-- .end .wrap -->
+        </section>                
+        <section class="bg-gray">
+          <span class="background dark" style="background-image:url('../static/images/bgrounds/takeaway.png')"></span>
+          <div class="wrap size-80">
+            <div class="alignleft">
+              <p class="text-context">KEY TAKEWAYS</p>
+            </div>
+            <p>&nbsp;</p>
+            <div class="flex-content" style="width: auto; padding-top: 20px">
               <ul class="fancy">
                 <li>
-                  <h4>
-                    <em>"Cliens mihi servus meus cliens."</em>
-                  </h4>
+                  <h4>Model >>> "Real World"</h4>
                 </li>
                 <li>
-                  <h4>
-                    Hide the dependencies of your dependencies
-                  </h4>
+                  <h4>Boundaries + SRP</h4>
                 </li>
+                <li>
+                  <h4>Redundancy is OK, as context is the KING</h4>
+                </li>
+                <li>
+                  <h4>Think in contracts (on all levels)</h4>
+                </li>               
               </ul>
             </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-green">
-          <div class="wrap">
-            <div class="alignleft title text-context">LAW OF DEMETER #2</div>
-            <figure class="size-50 alignleft">
-              <img style="height: 480px; width: auto; float: right" src="../static/images/diagrams/law_of_demeter2.png" alt="Law of Demeter #2">
-            </figure>
-            <div class="flex-content size-40 alignleft">
-              <ul class="fancy">
-                <li>
-                  <h4>
-                    If you & your dependency have similar dependency, keep them separate
-                  </h4>
-                </li>
-                <li>
-                  <h4>
-                    In case of too many local dependencies, consider the split
-                  </h4>
-                </li>
-              </ul>
+            <div class="flex-content aligncenter text-landing" style="width: auto; padding-top: 20px">
+              <h1>THANK YOU!</h1>
             </div>
           </div>
           <!-- .end .wrap -->
